@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(250, 250, 250);
+}
+
+/* HEADER */
+header{
+    margin-top: 20px;
+    width: 100vw;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* HEADER LOGO */
+header nav h1{
+    margin-left: 50px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: whitesmoke;
+    background-color: #09A8F5;
+}
+
+/* HEADER UL */
+header nav ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    font-size: 20px;
+    margin-right: 80px;
+}
+header nav ul li{
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #09A8F5;
+    transition: background-color 0.5s;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    transition: color 0.5s;
+}
+header nav ul li:hover{
+    background-color: rgb(250, 250, 250);
+}
+header nav ul li a:hover{
+    color: #1c1c1c;
+}
+
+
+/* MAIN */
+main{
+    width: 100vw;
+}
+main div{
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* REMOVING THE MENU HAMBURGUER */
+#menuHamburger{
+    display: none; 
+}
+
+/* MAIN TEXT */
+main div #text{
+    align-self:center;
+    width: 40%;
+    color: #1c1c1c;
+    font-size: 20px;
+}
+main div #text h1{
+    font-size: 5vw;
+}
+main div #text h2{
+    font-size: 3vw;
+    margin-top: -15px;
+    margin-bottom: -5px;
+}
+
+/* MAIN BUTTON */
+main div #text button{
+    border: none;
+    background-color: #09A8F5;
+    transition: 0.5s;
+
+    width: 20%;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+main div #text button:hover{
+    width: 25%;
+}
+main div #text button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* IMAGE */
+main #img{
+    width: 40%;
+}
+main section img{
+    width: 100%;
+}
+
+
+/* RESPONSIVE DESING */
+@media (max-width: 800px){
+    /* HEADER LOGO */
+header nav h1{
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+/* HEADER UL */
+header nav ul{
+    font-size: 16px;
+    gap: 10px;
+    margin-right: 40px;
+}
+/* MAIN */
+main div{
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+/* MAIN TEXT */
+main div #text{
+    align-self:center;
+    width: 65%;
+    font-size: 20px;
+}
+main div #text h1{
+    font-size: 40px;
+}
+main div #text h2{
+    font-size: 25px;
+    margin-top: -10px;
+    margin-bottom: -5px;
+}
+/* IMAGE */
+main #img{
+    width: 50%;
+}
+}
+
+@media(max-width: 600px){
+    header nav h1{
+        margin-left: 30px;
+    }
+    
+    /* HEADER UL */
+    header nav ul{
+        margin-right: 30px;
+    }
+    /* MAIN BUTTON */
+    main div #text button{
+        width: 30%
+    }
+    main div #text button:hover{
+        width: 40%;
+    }
+}
+@media(max-width: 460px){
+    /* MENU HAMBURGUER */
+    #menuHamburger{
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 28px;
+        z-index: 2;
+    }
+    #menuHamburger div{
+        width: 32px;
+        height: 2px;
+        background-color: #1c1c1c;
+        margin-bottom: 8px;
+        transition: 0.5s;
+    }
+    /* UL*/
+    header nav ul{
+    visibility: hidden;
+}
+    /* MAIN TEXT */
+    main div #text{
+        width: 70%;
+        font-size: 20px;
+    }
+    /* IMAGE */
+    main #img{
+        width: 70%;
+    }
+}
