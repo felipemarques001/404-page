@@ -1,7 +1,10 @@
 # 404-page
 
 
-![gif 404](https://user-images.githubusercontent.com/82411791/139361323-0a1eac26-ef19-430d-b9a5-203b4268c225.gif)
+
+
+https://user-images.githubusercontent.com/82411791/139361363-ce077a52-128b-4c2e-bfe0-b3ab5107b7a7.mp4
+
 
 
 Uma página 404 que fiz para fixar meus conhecimentos básicos em express (ferramenta do Node.JS), além de treinar CSS e HTML.
